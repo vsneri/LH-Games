@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LH Games — eletrônicos, consoles e jogos para o universo gamer.">
+  <title>LH Games | Sua loja gamer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" aria-label="LH Games - página inicial"><img src="img/logo.png" alt="Logo LH Games"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#section-banners">Promoções</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-vendidos">Consoles</a></li>
+            <li class="nav-item"><a class="nav-link" href="#novidades">Jogos</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          </ul>
+          <form class="d-flex search-form" role="search" id="form-busca">
+            <label class="visually-hidden" for="campo-busca">O que deseja buscar?</label>
+            <input class="form-control me-2" id="campo-busca" type="search" placeholder="O que deseja buscar?" aria-label="O que deseja buscar?">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="section-banners" class="container-fluid px-0" aria-label="Ofertas em destaque">
+      <div id="carousel-ofertas" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-ofertas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Oferta 1"></button><button type="button" data-bs-target="#carousel-ofertas" data-bs-slide-to="1" aria-label="Oferta 2"></button><button type="button" data-bs-target="#carousel-ofertas" data-bs-slide-to="2" aria-label="Oferta 3"></button></div>
+        <div class="carousel-inner"><div class="carousel-item active"><img src="img/banner1.PNG" class="d-block w-100" alt="Venha comprar na nossa loja"></div><div class="carousel-item"><img src="img/banner2.PNG" class="d-block w-100" alt="Promoção de produtos gamers"></div><div class="carousel-item"><img src="img/banner3.PNG" class="d-block w-100" alt="Várias novidades de produtos"></div></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-ofertas" data-bs-slide="prev" aria-label="Oferta anterior"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button><button class="carousel-control-next" type="button" data-bs-target="#carousel-ofertas" data-bs-slide="next" aria-label="Próxima oferta"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+      </div>
+    </section>
+    <section id="section-vendidos" class="container py-5" aria-labelledby="titulo-vendidos">
+      <div class="section-heading"><span class="eyebrow">Escolha dos players</span><h1 id="titulo-vendidos">Os mais vendidos</h1><p>Os títulos que estão dominando as partidas da comunidade.</p></div>
+      <div class="row g-4">
+        <article class="col-12 col-md-4"><div class="card product-card h-100"><img src="img/jogo1.PNG" class="card-img-top" alt="Capa do jogo em destaque 1"><div class="card-body"><span class="product-tag">MMORPG</span><h2 class="card-title">Eldoria Online</h2><p class="card-text">Explore um mundo persistente, forme sua guilda e conquiste territórios com sua squad.</p><p class="preco">R$ 182,00</p><a class="btn btn-primary w-100" href="#">Comprar agora</a></div></div></article>
+        <article class="col-12 col-md-4"><div class="card product-card h-100"><img src="img/jogo2.PNG" class="card-img-top" alt="Capa do jogo em destaque 2"><div class="card-body"><span class="product-tag">Souls-like</span><h2 class="card-title">Cinzas do Abismo</h2><p class="card-text">Enfrente chefes colossais, descubra segredos e sobreviva a um reino em ruínas.</p><p class="preco">R$ 149,90</p><a class="btn btn-primary w-100" href="#">Comprar agora</a></div></div></article>
+        <article class="col-12 col-md-4"><div class="card product-card h-100"><img src="img/jogo3.PNG" class="card-img-top" alt="Capa do jogo em destaque 3"><div class="card-body"><span class="product-tag">Aventura</span><h2 class="card-title">A Lenda de Aurora</h2><p class="card-text">Viaje por ilhas misteriosas, resolva enigmas e descubra o destino de uma heroína.</p><p class="preco">R$ 199,90</p><a class="btn btn-primary w-100" href="#">Comprar agora</a></div></div></article>
+      </div>
+    </section>
+    <section id="novidades" class="container py-5" aria-labelledby="titulo-novidades">
+      <div class="section-heading"><span class="eyebrow">Acabou de chegar</span><h2 id="titulo-novidades">Novidades da semana</h2><p>Confira os lançamentos escolhidos para deixar sua próxima partida ainda melhor.</p></div>
+      <div class="row g-4">
+        <article class="col-12 col-md-4"><div class="news-card"><span class="product-tag">Hardware</span><h3>Periféricos para subir o nível</h3><p>Teclados, mouses e headsets com precisão para cada jogada.</p><a href="#section-vendidos">Ver produtos →</a></div></article>
+        <article class="col-12 col-md-4"><div class="news-card"><span class="product-tag">Lançamentos</span><h3>Jogos que todo player quer</h3><p>Descubra os títulos mais comentados e monte sua coleção.</p><a href="#section-vendidos">Explorar catálogo →</a></div></article>
+        <article class="col-12 col-md-4"><div class="news-card"><span class="product-tag">Ofertas</span><h3>Descontos por tempo limitado</h3><p>Garanta seus favoritos com condições especiais nesta semana.</p><a href="#section-banners">Ver promoções →</a></div></article>
+      </div>
+    </section>
+    <section id="beneficios" class="container-fluid py-5"><div class="container"><div class="row g-3 text-center"><div class="col-12 col-md-4"><div class="benefit"><strong>Compra segura</strong><span>Seus dados protegidos em todas as etapas.</span></div></div><div class="col-12 col-md-4"><div class="benefit"><strong>Envio rápido</strong><span>Receba seus produtos sem perder tempo.</span></div></div><div class="col-12 col-md-4"><div class="benefit"><strong>Suporte gamer</strong><span>Atendimento preparado para ajudar você.</span></div></div></div></div></section>
+    <section id="galeria" class="container py-5" aria-labelledby="titulo-galeria"><div class="section-heading"><span class="eyebrow">Dentro do jogo</span><h2 id="titulo-galeria">Seu setup começa aqui</h2></div><div class="gallery-grid"><img src="img/jogo1.PNG" alt="Produto gamer da galeria"><img src="img/jogo2.PNG" alt="Produto gamer da galeria"><img src="img/jogo3.PNG" alt="Produto gamer da galeria"></div></section>
+  </main>
+  <footer><div class="container footer-content"><div><a class="footer-brand" href="index.html">LH<span>GAMES</span></a><p>A loja do seu universo gamer.</p></div><div><p class="footer-title">Navegue</p><a href="#section-vendidos">Produtos</a><a href="login.html">Minha conta</a></div><div><p class="footer-title">Atendimento</p><p>seg a sex, 9h às 18h</p><p>contato@lhgames.com</p></div></div><div class="footer-bottom"><p>© 2024 LH Games. Projeto acadêmico de Front-End.</p></div></footer>
+  <button id="voltar-topo" type="button" class="btn btn-primary" onclick="topo()">↑ Voltar ao topo</button>
+  <script src="js/script.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
